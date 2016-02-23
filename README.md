@@ -1,4 +1,4 @@
-# Latin Book
+# Latin: A Personal Voyage
 An interactive book by me, for me, to teach myself Latin.
 
 Potential mergers:

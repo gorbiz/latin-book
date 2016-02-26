@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "jade":   "wr 'jade .' *.jade",
-    "stylus": "wr 'stylus .' *.styl"
+    "stylus": "wr 'stylus .' *.styl",
+    "insta":  "insta --ignore node_modules\\|\\.git\\|\\.css\\|\\.jade\\|\\.styl$"
   },
   "repository": {
     "type": "git",

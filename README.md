@@ -1,6 +1,8 @@
 # Latin: A Personal Voyage
 An interactive book by me, for me, to teach myself Latin.
 
+Here is a [Trello board of ideas](https://trello.com/b/6UgI75QK/latin-a-personal-voyage), you are much welcome to contribute!
+
 Potential mergers:
  1. Potential 1st ½ page of book: http://bl.ocks.org/gorbiz/d55ed8c9a7c0c2487a39 ← far from done.
  2. Decenstion explorer: http://codepen.io/gorbiz/pen/eJoJQr ← 0% :art:.

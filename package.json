@@ -20,6 +20,7 @@
   "homepage": "https://github.com/gorbiz/latin-book",
   "devDependencies": {
     "jade": "^1.11.0",
+    "jstransformer-stylus": "^1.0.0",
     "stylus": "^0.53.0",
     "wr": "^1.3.1"
   }

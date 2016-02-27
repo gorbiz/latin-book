@@ -4,9 +4,11 @@
   "description": "Latin: A Personal Voyage",
   "main": "index.js",
   "scripts": {
-    "jade":   "wr 'jade .' *.jade",
-    "stylus": "wr 'stylus .' *.styl",
-    "insta":  "insta --ignore node_modules\\|\\.git\\|\\.css\\|\\.jade\\|\\.styl$"
+       "watch": "wr 'jade .' *.jade",
+        "live": "insta --ignore node_modules\\|\\.git\\|\\.css\\|\\.jade\\|\\.styl$",
+       "build": "jade . && stylus .",
+    "prestart": "npm run build",
+       "start": "see index.html"
   },
   "repository": {
     "type": "git",

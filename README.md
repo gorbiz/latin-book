@@ -1,6 +1,8 @@
 # Latin: A Personal Voyage
 An interactive book by me, for me, to teach myself Latin.
 
+Live: [here](http://gorbiz.com/gorbiz/latin-book/) (:warning: experimental & almost [too live](https://github.com/gorbiz/lucid-dreams)).
+
 <img src="https://s3.amazonaws.com/trello/images/og/trello-icon.png?v=2013-08-15" alt="Trello logo" width="24" height="24" />
 Here is a [Trello board of ideas](https://trello.com/b/6UgI75QK/latin-a-personal-voyage), you are much welcome to contribute!
 

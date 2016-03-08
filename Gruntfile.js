@@ -30,11 +30,24 @@ module.exports = function(grunt) {
         tasks: ['copy:css']
       }
     }
+
+    ,express: {
+      all: {
+        options: {
+          bases: 'dist',
+          livereload: true,
+          open: 'http://localhost:3000'
+        }
+      }
+    }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express');
 
+  grunt.registerTask('start', ['express', 'watch']);
   grunt.registerTask('default', ['jade', 'copy']);
 };

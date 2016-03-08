@@ -4,10 +4,8 @@
   "description": "Latin: A Personal Voyage",
   "main": "index.js",
   "scripts": {
-    "watch": "grunt watch",
     "build": "grunt",
-    "prestart": "npm run build",
-    "start": "see dist/index.html"
+    "start": "grunt start"
   },
   "repository": {
     "type": "git",
@@ -24,6 +22,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
     "jade": "^1.11.0",
     "jstransformer-stylus": "^1.0.0",
     "stylus": "^0.53.0",

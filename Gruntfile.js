@@ -48,6 +48,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');
 
-  grunt.registerTask('start', ['express', 'watch']);
-  grunt.registerTask('default', ['jade', 'copy']);
+  grunt.registerTask('build', ['jade', 'copy']);
+  grunt.registerTask('start', ['build', 'express', 'watch']);
+  grunt.registerTask('default', ['build']);
 };

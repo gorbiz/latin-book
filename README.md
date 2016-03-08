@@ -12,14 +12,18 @@ Potential mergers:
 
 
 ## Develop
-Clone this repository and ...
-1. Make changes to `.jade` & `.styl` files.
-2. Run `npm build` (makes them into `.html` & `.css` files).
-3. Open / refresh `index.html`
+Clone this repository, do `npm install` and:
+1. Run `npm start` (or `grunt start` if you prefer)
+2. Make changes to `.jade` & `.css` files; browser should refresh automatically
 
-Or simply keep this running in a terminal `npm run watch` (automatically re-builds files on change).
+### Alternative approach
+Still **very much** a HACK, but faster and less `grunt` & fewer tears:  
+Use the Atom editor and add ~this: https://gist.github.com/gorbiz/2059e3b00bd2219c58a7 to your Init Script (`init.coffee`).
 
-Of course, you shouldn't have to refresh after making changes. A long term (superset) solution in progress: [gorbiz/lucid-dreams#2](https://github.com/gorbiz/lucid-dreams/issues/2)
+And...
+```sh
+cd src && see index.html && livereload
+```
 
 --
 PS.  

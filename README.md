@@ -28,4 +28,4 @@ cd src && see index.html && livereload
 --
 PS.  
 Lost in Wikipedia instead of Latin studies?  
-**Procrastinate with style** & read **Wikipedia in Latin**: https://gist.github.com/gorbiz/57f1e5aa7cafedc5af9c (rather get encouraged to).
+**Procrastinate with style** & read **Wikipedia in Latin**: https://gist.github.com/gorbiz/57f1e5aa7cafedc5af9c (get encouraged to anyway).

@@ -9,13 +9,18 @@ body {
 
 p { font-family: serif; }
 
+mark { background: rgba(255,255,0, .5); }
+
 dev       { background: rgba(127,127,127, .15); }
 dev:hover { background: rgba(127,127,127, .35); }
 
 .hand-written { font-family: 'Roman Rustica'; }
 .inscription  { font-family: 'Cinzel'; }
 
-mark { background: rgba(255,255,0, .5); }
+.etym {
+  font-style: oblique;
+  background: #e8e8e8;
+}
 
 .evolving-header {
   position: absolute;

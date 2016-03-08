@@ -10,10 +10,10 @@ p {
   font-family: serif;
 }
 .hand-written {
-  /*font-family: 'Roman Rustica';*/
+  font-family: 'Roman Rustica';
 }
 .inscription {
-  /*font-family: 'Cinzel';*/
+  font-family: 'Cinzel';
 }
 .evolving-header {
   font-size: 1.25em;

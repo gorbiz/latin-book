@@ -39,6 +39,7 @@ dev:hover { background: rgba(127,127,127, .35); }
   margin: 0;
   height: 1.1em;
   font-size: 8em;
+  white-space: nowrap;
 }
 .evolving-header .comment {
   font-size: 1.8em;

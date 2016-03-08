@@ -78,8 +78,8 @@ script(type='text/javascript').
         $($('.evolving-header li')[index]).show();
         
         $('.evolving-header nav a').removeClass('current');
-        $('.evolving-header nav a:eq('+(i+1)+')').addClass('current');
-        window.location.hash = '#h' + i;
+        $('.evolving-header nav a:eq('+(index+1)+')').addClass('current');
+        window.location.hash = '#h' + index;
       },
       cycle: function(diff) {
         if (typeof diff == 'undefined') diff = 1;
@@ -91,7 +91,7 @@ script(type='text/javascript').
   }();
 
   var currentHeader = (window.location.hash.match(/h(\d)/)||[null,0])[1];
-  header.show(currentHeader);
+  header.show(+currentHeader);
   $('.evolving-header nav a.next').click(function(e) {
     header.cycle();
     return false; 

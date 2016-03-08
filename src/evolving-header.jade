@@ -1,42 +1,106 @@
-ol.evolving-header
+.evolving-header
   // CONSIDER: A phrase with J & U in it, to get a chance to mention that they don't exist yet (perhaps also a W-sound).
   // TODO: Write in https://en.wikipedia.org/wiki/Roman_cursive first
+  ol
+    li
+      h1.hand-written DICOSALUE
+      p.comment.
+         These are #[mark Rustic capitalis], the likes you might find in
+         (fairly well written?) papyrus from ? BCE -- ? CE (in Roman
+         aristocracy / high society(?)).
+      // TODO: Add photo of rustic writing
 
-  li
-    p.hand-written DICOSALVE
-    p.comment.
-       These are #[mark Rustic capitalis], the likes you might find in
-       (fairly well written?) papyrus from ? BCE -- ? CE (in Roman
-       aristocracy / high society(?)).
-    // TODO: Add photo of rustic writing
+    li
+      h1.hand-written DICO·SALUE
+      p.comment.
+        Let’s add a word divider; an #[mark interpunct]<br>
+        Common in classical Latin, but fell out of use ~200 CE.
 
-  li
-    p.hand-written DICO·SALVE
-    p.comment.
-      Let’s add a word divider; an #[mark interpunct]<br>
-      Common in classical Latin, but fell out of use ~200 CE.
+    li
+      h1.hand-written DICO SALUE
+      p.comment.
+        #[mark Spaces] was used by students in learning (to differentiate
+        words?), but was #[mark considered childish]
 
-  li
-    p.hand-written DICO SALVE
-    p.comment.
-      #[mark Spaces] was used by students in learning (to differentiate
-      words?), but was #[mark considered childish]
+    li
+      h1.inscription DICO·SALVE
+      p.comment.
+        Inscriptions often used #[mark Roman square capitals].<br>
+        See: inscriptions on Pantheon &amp; Trajan's Column.
+      // TODO: Add photo of an inscription
 
-  li
-    p.inscription DICO·SALVE
-    p.comment.
-      Inscriptions often used #[mark Roman square capitals].<br>
-      See: inscriptions on Pantheon &amp; Trajan's Column.
-    // TODO: Add photo of an inscription
+      li
+        h1 Dico Salve
+        p.comment.
+          Lower case wasn't around for more than 1 000 years...
 
-  li
-    p Dico Salve
-    p.comment Lower case wasn't around for more than 1 000 years...
+      li
+        h1 Dico: “Salve!”
+        p.comment.
+          Colon, quotation marks &amp; exclamatn mark, ...also new.
 
-  li
-    p Dico: “Salve!”
-    p.comment Colon, quotation marks &amp; exclamatn mark, ...also new.
+      li
+        h1 Dīcō: “Salvē!”
+        p.comment.
+          While we are at it; macrons showsus where to put the stress.
 
-  li
-    p Dīcō: “Salvē!”
-    p.comment While we are at it; macrons showsus where to put the stress.
+  nav
+    a(href="").prev ◄
+    | ·
+    a(href="#h0").sel 1
+    | ·
+    a(href="#h1").sel 2
+    | ·
+    a(href="#h2").sel 3
+    | ·
+    a(href="#h3").sel 4
+    | ·
+    a(href="#h4").sel 5
+    | ·
+    a(href="#h5").sel 6
+    | ·
+    a(href="#h6").sel 7
+    | ·
+    a(href="").next ►
+
+script(type='text/javascript').
+  
+  var header = function() {
+    var i = 0;
+    return {
+      show: function(index) {
+        if (typeof index == 'undefined') {
+          index = i;
+        } else {
+          i = index;
+        }
+        $('.evolving-header li').hide();
+        $($('.evolving-header li')[index]).show();
+        
+        $('.evolving-header nav a').removeClass('current');
+        $('.evolving-header nav a:eq('+(i+1)+')').addClass('current');
+        window.location.hash = '#h' + i;
+      },
+      cycle: function(diff) {
+        if (typeof diff == 'undefined') diff = 1;
+        if (!$('.evolving-header li')[i+diff]) return;
+        i += diff;
+        this.show();
+      }
+    }
+  }();
+
+  var currentHeader = (window.location.hash.match(/h(\d)/)||[null,0])[1];
+  header.show(currentHeader);
+  $('.evolving-header nav a.next').click(function(e) {
+    header.cycle();
+    return false; 
+  });
+  $('.evolving-header nav a.prev').click(function(e) {
+    header.cycle(-1);
+    return false;
+  });
+  $('.evolving-header nav a.sel').click(function(e) {
+    header.show(this.innerHTML - 1);
+    return false;
+  });

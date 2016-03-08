@@ -1,32 +1,57 @@
 @font-face {
-  /*font-family: 'Roman Rustica';
-  src: url("https://dl.dropboxusercontent.com/u/7449985/fonts/Roman-Rustica.ttf");*/
+  font-family: 'Roman Rustica';
+  src: url("https://dl.dropboxusercontent.com/u/7449985/fonts/Roman-Rustica.ttf");
 }
 body {
-  background: #ffe;
-  color: #222;
-}
-p {
-  font-family: serif;
-}
-.hand-written {
-  font-family: 'Roman Rustica';
-}
-.inscription {
-  font-family: 'Cinzel';
-}
-.evolving-header {
-  font-size: 1.25em;
-}
-.evolving-header li .comment {
-  background: #f5deb3;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.35);
-  padding: 0.5em;
-  font-size: 0.8em;
-  margin-right: 1em;
+  background: #f8faf0;
+  color: #333;
 }
 
-h1 {
+p { font-family: serif; }
+.hand-written { font-family: 'Roman Rustica'; }
+.inscription  { font-family: 'Cinzel'; }
+
+mark { background: rgba(255,255,0, .5); }
+
+.evolving-header {
   position: absolute;
-  top: 5px;
+  margin: 3em 4em 0 4em;
+}
+.evolving-header ol {
+  list-style-type: none;
+  height: 18em;;
+}
+.evolving-header ol li {
+  display: none;
+}
+.evolving-header h1 {
+  margin: 0;
+  height: 1.1em;
+  font-size: 8em;
+}
+.evolving-header .comment {
+  font-size: 1.8em;
+  line-height: 1.3em;
+  max-width: 27em;
+}
+
+.evolving-header nav {
+  font-size: 4em;
+  color: #aaa;
+}
+.evolving-header nav a {
+  padding: 0 .15em;
+  color: #666;
+  text-decoration: none;
+}
+.evolving-header nav a:hover {
+  color: red;
+}
+.evolving-header nav a.sel {
+  border: 3px solid transparent;
+}
+.evolving-header nav a.current {
+  color: black;
+  background: #eee;
+  border-color: #ddd;
 }

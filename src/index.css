@@ -18,8 +18,10 @@ dev:hover { background: rgba(127,127,127, .35); }
 .inscription  { font-family: 'Cinzel'; }
 
 .etym {
+  padding-left: 1em;
   font-style: oblique;
-  background: #e8e8e8;
+  line-height: 2.5em;
+  font-size: .85em;
 }
 
 .evolving-header {
@@ -28,7 +30,7 @@ dev:hover { background: rgba(127,127,127, .35); }
 }
 .evolving-header ol {
   list-style-type: none;
-  height: 18em;;
+  height: 20em;;
 }
 .evolving-header ol li {
   display: none;

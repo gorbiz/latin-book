@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Roman Rustica';
+  font-family: 'Extern Roman Rustica';
   src: url("https://dl.dropboxusercontent.com/u/7449985/fonts/Roman-Rustica.ttf");
 }
 body {
@@ -14,7 +14,7 @@ mark { background: rgba(255,255,0, .5); }
 dev       { background: rgba(127,127,127, .15); }
 dev:hover { background: rgba(127,127,127, .35); }
 
-.hand-written { font-family: 'Roman Rustica'; }
+.hand-written { font-family: 'Roman Rustica', 'Extern Roman Rustica'; }
 .inscription  { font-family: 'Cinzel'; }
 
 .etym {

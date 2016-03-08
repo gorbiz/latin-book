@@ -8,6 +8,10 @@ body {
 }
 
 p { font-family: serif; }
+
+dev       { background: rgba(127,127,127, .15); }
+dev:hover { background: rgba(127,127,127, .35); }
+
 .hand-written { font-family: 'Roman Rustica'; }
 .inscription  { font-family: 'Cinzel'; }
 

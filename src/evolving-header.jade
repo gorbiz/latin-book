@@ -69,7 +69,7 @@ script(type='text/javascript').
           i = index;
         }
         $('.evolving-header li').hide();
-        $($('.evolving-header li')[index]).show();
+        $($('.evolving-header li')[index]).fadeIn('fast').show();
         
         $('.evolving-header nav a').removeClass('current');
         $('.evolving-header nav a:eq('+(index+1)+')').addClass('current');

@@ -50,6 +50,10 @@ dev:hover { background: rgba(127,127,127, .35); }
 .evolving-header nav {
   font-size: 4em;
   color: #aaa;
+  opacity: 0.5;
+}
+.evolving-header nav:hover {
+  opacity: 1;
 }
 .evolving-header nav a {
   padding: 0 .15em;

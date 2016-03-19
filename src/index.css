@@ -25,7 +25,6 @@ dev:hover { background: rgba(127,127,127, .35); }
 }
 
 .evolving-header {
-  position: absolute;
   margin: 3em 4em 0 4em;
 }
 .evolving-header ol {
